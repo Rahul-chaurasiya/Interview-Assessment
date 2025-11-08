@@ -1,0 +1,29 @@
+# FastAPI Core
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+pydantic==2.5.3
+python-dotenv==1.0.0
+
+# Database
+sqlalchemy==2.0.25
+
+# Audio Processing & Transcription
+openai-whisper==20231117
+pydub==0.25.1
+soundfile==0.12.1
+librosa==0.10.1
+
+# NLP & ML
+transformers==4.36.2
+torch==2.1.2
+sentence-transformers==2.2.2
+nltk==3.8.1
+numpy==1.26.3
+scikit-learn==1.4.0
+
+# API Requests
+requests==2.31.0
+
+# Optional: For better performance
+# ffmpeg-python==0.2.0

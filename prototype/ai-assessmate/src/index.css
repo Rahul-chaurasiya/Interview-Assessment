@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 150 11% 94%;
+    --foreground: 158 39% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 158 39% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 158 39% 17%;
+
+    --primary: 158 39% 17%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 158 36% 27%;
+    --primary-dark: 156 38% 8%;
+
+    --secondary: 150 20% 97%;
+    --secondary-foreground: 158 39% 17%;
+
+    --muted: 150 7% 87%;
+    --muted-foreground: 158 20% 40%;
+
+    --accent: 44 63% 71%;
+    --accent-foreground: 158 39% 17%;
+    --accent-light: 44 47% 80%;
+    --accent-dark: 44 47% 58%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 7% 87%;
+    --input: 150 7% 87%;
+    --ring: 158 39% 17%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    
+    --info: 221 83% 53%;
+    --info-foreground: 0 0% 100%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 156 38% 8%;
+    --foreground: 150 20% 97%;
+
+    --card: 158 39% 17%;
+    --card-foreground: 150 20% 97%;
+
+    --popover: 158 39% 17%;
+    --popover-foreground: 150 20% 97%;
+
+    --primary: 150 20% 97%;
+    --primary-foreground: 158 39% 17%;
+    --primary-light: 158 36% 27%;
+    --primary-dark: 156 38% 8%;
+
+    --secondary: 158 36% 27%;
+    --secondary-foreground: 150 20% 97%;
+
+    --muted: 158 36% 27%;
+    --muted-foreground: 150 7% 87%;
+
+    --accent: 44 63% 71%;
+    --accent-foreground: 158 39% 17%;
+    --accent-light: 44 47% 80%;
+    --accent-dark: 44 47% 58%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 150 20% 97%;
+
+    --border: 158 36% 27%;
+    --input: 158 36% 27%;
+    --ring: 44 63% 71%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    
+    --info: 221 83% 53%;
+    --info-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
