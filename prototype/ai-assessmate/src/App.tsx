@@ -14,6 +14,7 @@ import ViewResults from "./pages/ViewResults";
 import NotFound from "./pages/NotFound";
 import InterviewHistory from "./pages/InterviewHistory"; // ✅ added missing import
 import CompareCandidates from "@/components/CompareCandidates";
+import LiveInterview from "./pages/LiveInterview";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,9 @@ const App = () => (
                 <Route path="/results/:interviewId" element={<ViewResults />} /> {/* ✅ fixed param name */}
                 <Route path="/candidates" element={<CandidatesList />} />
                 <Route path="/compare" element={<CompareCandidates />} />
+               <Route path="/live-interview" element={<LiveInterview />} />
+
+
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>

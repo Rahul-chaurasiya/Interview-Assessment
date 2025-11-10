@@ -14,7 +14,7 @@ load_dotenv()
 # Fix: Ensure FFmpeg path is available to Whisper
 # =============================================================
 # 🔧 Replace this path with your actual ffmpeg/bin path if different
-FFMPEG_PATH = r"C:\ffmpeg\ffmpeg-2025-10-27-git-68152978b5-essentials_build\bin"
+FFMPEG_PATH = r"C:\ffmpeg-8.0-essentials_build\bin"
 if os.path.exists(FFMPEG_PATH):
     os.environ["PATH"] += os.pathsep + FFMPEG_PATH
     print(f"✅ FFmpeg path added: {FFMPEG_PATH}")
