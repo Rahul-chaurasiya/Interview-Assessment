@@ -118,8 +118,8 @@ DB_HOST=localhost
 DB_PORT=3306
 DB_NAME=interview_assessment
 DB_USER=root
-DB_PASSWORD='#Rahul123'
-GEMINI_API_KEY=AIzaSyADbcIq1ZvlRGb1Bst56OG-sxA-Qb--iKQ
+DB_PASSWORD=root
+GEMINI_API_KEY=******************************************
 USE_LOCAL_WHISPER=true
 WHISPER_MODEL=base
 ```
